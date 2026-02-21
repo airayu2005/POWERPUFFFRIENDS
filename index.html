@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile Info</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+<div class="tabs">
+    <button id="btnPersonal" class="active" onclick="showPersonal()">✨ PERSONAL INFORMATION ✨</button>
+    <button id="btnOther" onclick="showOther()">✨ OTHER INFORMATION ✨</button>
+</div>
+
+
+<div class="container">
+
+    <div id="personal">
+        <div class="section">
+            <div class="row"><div class="label">Name:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Age:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Address:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Birthday:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Birth Place:</div><div class="box"></div></div>
+        </div>
+    </div>
+
+    <div id="other" style="display:none;">
+        <div class="section">
+            <div class="row"><div class="label">Motto in Life:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Hobby:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Talent:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Dream Course:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Why did you choose that course?</div><div class="box"></div></div>
+            <div class="row"><div class="label">Parents:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Parents Work:</div><div class="box"></div></div>
+            <div class="row"><div class="label">Crush:</div><div class="box"></div></div>
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+function showPersonal() {
+    document.getElementById("personal").style.display = "block";
+    document.getElementById("other").style.display = "none";
+
+    document.getElementById("btnPersonal").classList.add("active");
+    document.getElementById("btnOther").classList.remove("active");
+}
+
+function showOther() {
+    document.getElementById("personal").style.display = "none";
+    document.getElementById("other").style.display = "block";
+
+    document.getElementById("btnPersonal").classList.remove("active");
+    document.getElementById("btnOther").classList.add("active");
+}
+</script>
+
+</body>
+</html>
