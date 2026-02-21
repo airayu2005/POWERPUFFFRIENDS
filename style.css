@@ -1,0 +1,87 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    color: white;
+
+    background-image: url("website.jpg");
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+.tabs button {
+    background: linear-gradient(135deg, #000000, #000000);
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+.tabs button:hover {
+    background: linear-gradient(135deg, #1e88e5, #0b5ed7);
+    transform: translateY(-3px) scale(1.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.25);
+}
+
+.tabs button.active {
+    background: linear-gradient(135deg, #323c4a, #003f9e);
+    box-shadow: 0 0 15px rgba(35, 42, 44, 0.8);
+    transform: scale(1.05);
+}
+
+
+.container {
+    padding: 35px;
+}
+
+.section {
+    background: rgba(78, 43, 43, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.row {
+    display: flex;
+    margin-bottom: 10px;
+    align-items: stretch;  
+}
+
+.label {
+    background-color: #3e6f8e;
+    padding: 8px;
+    min-width: 150px;
+    text-align: center;
+    border-radius: 20px;
+
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
+}
+
+.box {
+    background-color: #5998b8;
+    flex: 1;
+    margin-left: 10px;
+    border-radius: 20px;
+
+    padding: 10px 15px;
+    color: #000;
+    font-size: 14px;
+
+    white-space: normal;
+}
